@@ -88,3 +88,8 @@ SELECT
 
 
 4. Contare quanti corsi di laurea ci sono per ogni dipartimento
+
+SELECT count( department_id) AS appartamento
+ FROM university.degrees
+ WHERE 
+ department_id = "3"
