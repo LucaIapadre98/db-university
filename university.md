@@ -78,5 +78,13 @@ Nel 2020 ci sono 1645 iscritti
 
 3. Calcolare la media dei voti di ogni appello d'esame
 
+SELECT 
+  AVG(vote) AS vote_average,
+  COUNT(vote) AS vote_count
+  FROM exam_student
+  WHERE exam_id = "1";
+
+  Non sono per appello però...
+
 
 4. Contare quanti corsi di laurea ci sono per ogni dipartimento
