@@ -57,6 +57,21 @@ SELECT count(*)
 
 1. Contare quanti iscritti ci sono stati ogni anno
 
+SELECT count(*)
+ FROM students
+ WHERE
+   enrolment_date >= "2020-01-01" AND
+   enrolment_date <= "2020-12-31";
+
+   oppure:
+
+SELECT count(*)
+ FROM students
+ WHERE
+   enrolment_date BETWEEN "2020-01-01" AND "2020-12-31";
+
+Nel 2020 ci sono 1645 iscritti
+
 
 2. Contare gli insegnanti che hanno l'ufficio nello stesso edificio
 
